@@ -429,7 +429,7 @@ h1 {
 .projects-grid {
   display: grid;
   gap: 22px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .project-card {
@@ -683,7 +683,7 @@ textarea {
     padding: 12px 0;
   }
 
-  .nav-toggle:checked ~ .nav-list {
+  .nav-toggle:checked ~ nav .nav-list {
     display: flex;
   }
 
