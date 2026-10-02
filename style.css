@@ -308,22 +308,11 @@ h1 {
   position: relative;
 }
 
-.avatar-placeholder::before {
-  border: 1px dashed rgba(56, 189, 248, 0.45);
-  border-radius: 50%;
-  content: "";
-  height: 68%;
-  position: absolute;
-  width: 68%;
-}
-
-.avatar-content {
-  color: var(--cyan);
-  font-family: Consolas, monospace;
-  font-size: clamp(3rem, 8vw, 5.4rem);
-  font-weight: 700;
-  position: relative;
-  text-shadow: 0 0 30px rgba(56, 189, 248, 0.6);
+.avatar-placeholder img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .section {
@@ -440,7 +429,7 @@ h1 {
 .projects-grid {
   display: grid;
   gap: 22px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .project-card {
@@ -461,13 +450,11 @@ h1 {
   position: relative;
 }
 
-.project-visual::before {
-  border: 1px solid rgba(56, 189, 248, 0.26);
-  content: "";
-  height: 150px;
-  position: absolute;
-  transform: rotate(45deg);
-  width: 150px;
+.project-visual img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .project-code {
